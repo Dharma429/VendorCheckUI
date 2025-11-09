@@ -63,7 +63,6 @@ class WebChatbot {
 
     async callAPI() {
         try {
-
               const apiUrl = `http://localhost:3001/fill-form?businessName=${encodeURIComponent(this.state.companyName)}&feiNumber=${encodeURIComponent(this.state.feNumber)}`;
         
         console.log(`📡 Connecting to API: ${apiUrl}`);
