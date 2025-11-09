@@ -1,7 +1,7 @@
 module.exports = {
     // API Configuration
     api: {
-        baseURL: 'http://localhost:3001/fill-form/',
+        baseURL: 'http://192.168.1.185:3001/fill-form/',
         timeout: 10000,
         headers: {
             'Content-Type': 'application/json',

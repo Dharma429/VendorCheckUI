@@ -63,7 +63,7 @@ class WebChatbot {
 
     async callAPI() {
         try {
-              const apiUrl = `http://localhost:3001/fill-form?businessName=${encodeURIComponent(this.state.companyName)}&feiNumber=${encodeURIComponent(this.state.feNumber)}`;
+              const apiUrl = `http://192.168.1.185:3001/fill-form?businessName=${encodeURIComponent(this.state.companyName)}&feiNumber=${encodeURIComponent(this.state.feNumber)}`;
         
         console.log(`📡 Connecting to API: ${apiUrl}`);
 
@@ -176,7 +176,7 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`🤖 Web Chatbot running on http://localhost:${PORT}`);
+    console.log(`🤖 Web Chatbot running on http://192.168.1.185:${PORT}`);
 });
 
 module.exports = app;

@@ -56,7 +56,7 @@ class CompanyChatbot {
    async connectToAPI() {
     try {
         // Build URL with query parameters for GET request
-        const apiUrl = `http://localhost:3001/fill-form?businessName=${encodeURIComponent(this.conversationState.companyName)}&feiNumber=${encodeURIComponent(this.conversationState.feNumber)}`;
+        const apiUrl = `http://192.168.1.185:3001/fill-form?businessName=${encodeURIComponent(this.conversationState.companyName)}&feiNumber=${encodeURIComponent(this.conversationState.feNumber)}`;
         
         console.log(`📡 Connecting to API: ${apiUrl}`);
 
